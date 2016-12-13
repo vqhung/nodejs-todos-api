@@ -41,7 +41,7 @@ app.get('/todos/:id', (request, response) => {
   Todo.findById(id).then((todo) => {
 
     if(!todo) {
-      return response.status.send(404)
+      return response.status(404).send()
     }
 
     response.send({todo})
