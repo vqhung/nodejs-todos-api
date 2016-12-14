@@ -78,6 +78,8 @@ app.delete('/todos/:id', (request, response) => {
     });
 });
 
+// Modify git commit name
+
 app.patch('/todos/:id', (request, response) => {
 
   var id = request.params.id;
