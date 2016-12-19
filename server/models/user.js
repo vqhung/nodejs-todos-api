@@ -62,7 +62,7 @@ UserSchema.methods.removeToken = function (token) {
       tokens: {token}
     }
   })
-}
+};
 
 UserSchema.statics.findByToken = function (token) {
   var User = this;
